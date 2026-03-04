@@ -4,11 +4,11 @@ sum=0
 
 for i in range(n):
     num=int(input())
-    li.append(num)
     if(num==0):
-        del li[-1]
-        del li[-1]
-
-for i in range(len(li)):
-    sum+=li[i]
+        sum-=li[-1]
+        li.pop()
+    else:
+        li.append(num)
+        sum+=num
+    
 print(sum)   
