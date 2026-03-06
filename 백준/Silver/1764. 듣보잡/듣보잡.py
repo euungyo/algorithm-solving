@@ -11,5 +11,5 @@ for i in range(m):
 
 nohearandlook.sort()
 print(len(nohearandlook))
-for name in nohearandlook:
-    print(name)
+for i in range(len(nohearandlook)):
+    print(nohearandlook[i])
